@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#009eb9", "on-primary-container": "#0d0096", "inverse-surface": "#dfe2f1", "primary-fixed": "#e1e0ff", "primary-fixed-dim": "#c0c1ff", "on-error": "#690005", "surface-tint": "#c0c1ff", "secondary-fixed": "#f0dbff", "background": "#0f131d", "tertiary-fixed": "#acedff", "tertiary": "#4cd7f6", "on-surface": "#dfe2f1", "on-surface-variant": "#c7c4d7", "surface": "#0f131d", "surface-container-highest": "#313540", "surface-container-low": "#171b26", "primary-container": "#8083ff", "outline-variant": "#464554", "on-error-container": "#ffdad6", "on-primary-fixed": "#07006c", "on-secondary-fixed": "#2c0051", "secondary": "#ddb7ff", "on-tertiary": "#003640", "surface-dim": "#0f131d", "error": "#ffb4ab", "on-secondary": "#490080", "on-tertiary-container": "#002f38", "secondary-container": "#6f00be", "surface-container": "#1c1f2a", "surface-container-lowest": "#0a0e18", "surface-bright": "#353944", "inverse-on-surface": "#2c303b", "tertiary-fixed-dim": "#4cd7f6", "on-background": "#dfe2f1", "surface-variant": "#313540", "on-primary-fixed-variant": "#2f2ebe", "on-tertiary-fixed": "#001f26", "surface-container-high": "#262a35", "on-secondary-container": "#d6a9ff", "on-primary": "#1000a9", "secondary-fixed-dim": "#ddb7ff", "outline": "#908fa0", "on-secondary-fixed-variant": "#6900b3", "on-tertiary-fixed-variant": "#004e5c", "error-container": "#93000a", "inverse-primary": "#494bd6", "primary": "#c0c1ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-xl": "2.5rem", "space-md": "1rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "margin": "3rem" }, "fontFamily": { "headline-lg": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "display-lg": [ "Plus Jakarta Sans" ], "headline-xl-mobile": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-xl": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-lg": [ "32px", { "lineHeight": "40px", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "700" } ], "label-sm": [ "10px", { "lineHeight": "14px", "fontWeight": "700" } ], "display-lg-mobile": [ "36px", { "lineHeight": "44px", "fontWeight": "800" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-lg": [ "56px", { "lineHeight": "64px", "fontWeight": "800" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "title-md": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased relative min-h-screen selection:bg-primary selection:text-on-primary"><div class="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(circle_at_20%_15%,rgba(192,193,255,0.08),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(76,215,246,0.06),transparent_50%)]"></div><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs"><div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-primary to-secondary flex items-center justify-center shadow-[0_0_16px_rgba(192,193,255,0.35)]"><span class="material-symbols-outlined text-surface-container-lowest text-[22px]">hub</span></div><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Uni<span class="text-primary">Sphere</span></span></div><span class="hidden sm:inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-tertiary"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>Campus Live</span></div><div class="hidden xl:flex items-center bg-surface-container px-3 py-1.5 rounded-lg gap-space-sm w-56 focus-within:w-64 transition-all"><span class="material-symbols-outlined text-outline text-[18px]">search</span><input class="bg-transparent border-none text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none w-full" placeholder="Quick search events..." type="text"/><kbd class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-highest px-1.5 py-0.5 rounded">⌘K</kbd></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a aria-current="page" class="px-3 py-1.5 rounded-lg transition-colors bg-primary-container text-on-primary-container font-headline-sm" data-path="explore-events" href="#">Explore Events</a><a class="px-3 py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="calendar" href="#">Calendar</a><a class="px-3 py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="my-tickets" href="#">My Tickets</a><a class="px-3 py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="host-hub" href="#">Host Hub</a><a class="px-3 py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="admin-analytics" href="#">Analytics</a></nav></div><div class="flex items-center gap-space-sm"><div class="hidden 2xl:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-tertiary-fixed"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span><span>DB: Supabase/PostgreSQL</span></div><div class="relative group"><button class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container-high hover:bg-surface-container-highest transition-colors" type="button"><span class="material-symbols-outlined text-secondary text-[16px]">school</span><span class="font-label-sm text-label-sm text-secondary">Student</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></button><div class="absolute right-0 top-full mt-1.5 w-44 p-1.5 rounded-xl bg-surface-container-high shadow-[0_12px_32px_-8px_rgba(0,0,0,0.5)] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all"><a class="flex items-center gap-2 px-2.5 py-2 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container-highest transition-colors" href="#"><span class="material-symbols-outlined text-secondary text-[18px]">school</span>Student</a><a class="flex items-center gap-2 px-2.5 py-2 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container-highest transition-colors" href="#"><span class="material-symbols-outlined text-primary text-[18px]">campaign</span>Organizer</a><a class="flex items-center gap-2 px-2.5 py-2 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container-highest transition-colors" href="#"><span class="material-symbols-outlined text-tertiary text-[18px]">shield_person</span>Admin</a></div></div><div class="relative group hidden sm:block"><button class="flex items-center gap-2 px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors" type="button"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-mono truncate max-w-[130px]">usr_9a4f21 (Alex)</span><span class="material-symbols-outlined text-outline text-[16px]">swap_vert</span></button><div class="absolute right-0 top-full mt-1.5 w-64 p-2 rounded-xl bg-surface-container-high shadow-[0_12px_32px_-8px_rgba(0,0,0,0.5)] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all"><div class="px-2 py-1 font-label-sm text-label-sm text-outline uppercase">Active Schema Session</div><div class="mt-1 space-y-1"><a class="block p-2 rounded-lg bg-surface-container-highest hover:bg-surface-container text-left transition-colors" href="#"><div class="font-label-md text-label-md text-primary font-mono">usr_9a4f21 (Alex)</div><div class="font-body-sm text-body-sm text-on-surface-variant">Role: Student • Read / RSVP</div></a><a class="block p-2 rounded-lg hover:bg-surface-container-highest text-left transition-colors" href="#"><div class="font-label-md text-label-md text-on-surface font-mono">usr_e7b102 (Sarah)</div><div class="font-body-sm text-body-sm text-outline">Role: Organizer • Write / Scan</div></a><a class="block p-2 rounded-lg hover:bg-surface-container-highest text-left transition-colors" href="#"><div class="font-label-md text-label-md text-on-surface font-mono">usr_admin_01 (Dev)</div><div class="font-body-sm text-body-sm text-outline">Role: Admin • Superuser</div></a></div></div></div><button class="relative p-2 rounded-lg bg-surface-container hover:bg-surface-container-high hover:text-on-surface text-on-surface-variant transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-tertiary"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Dynamic Campus Ticker -->
+<div class="w-full bg-surface-container-lowest px-gutter py-2 flex items-center justify-between overflow-hidden shadow-sm">
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+        Pulse Ticker
+      </span>
+</div>
+<div class="flex-1 overflow-x-hidden whitespace-nowrap px-4 mask-radial">
+<div class="inline-flex gap-8 font-body-sm text-body-sm text-on-surface-variant" id="ticker-stream">
+<span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>⚡ HackMIT 2025: <strong class="text-on-surface font-semibold">42 spots left</strong></span>
+<span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span>🎨 Spring Neon Rave: <strong class="text-tertiary font-semibold">98% full</strong></span>
+<span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary"></span>🚀 Robotics Showcase: <strong class="text-on-surface font-semibold">RSVP Open</strong></span>
+<span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>🎧 Quad Silent Disco: <strong class="text-secondary font-semibold">Sold Out</strong></span>
+<span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span>💡 AI Venture Sprint: <strong class="text-on-surface font-semibold">12 spots left</strong></span>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-3 shrink-0 font-label-sm text-label-sm text-outline">
+<span class="font-mono text-tertiary-fixed">LATENCY: 18ms</span>
+<span>•</span>
+<span class="font-mono text-primary">POSTGRES RLS ACTIVE</span>
+</div>
+</div>
+<!-- Role Control Matrix & Sandbox Header -->
+<section class="w-full px-gutter py-space-md">
+<div class="w-full rounded-2xl bg-surface-container-low p-space-md shadow-xl backdrop-blur-xl relative overflow-hidden">
+<!-- Neon Ambient Orb -->
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-12 -left-12 w-64 h-64 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md relative z-10">
+<!-- Persona Switcher -->
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-2 bg-surface-container px-3 py-1.5 rounded-xl">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Simulated Persona</span>
+<select class="bg-transparent text-on-surface font-headline-sm text-body-md font-semibold focus:outline-none cursor-pointer pr-4" id="user-role-select">
+<option class="bg-surface-container-high text-on-surface" value="student">Alex River (Student • usr_4a8f9c21)</option>
+<option class="bg-surface-container-high text-on-surface" value="organizer">Rachel Vance (Club Lead • usr_8b2e11d0)</option>
+<option class="bg-surface-container-high text-on-surface" value="admin">Dr. Kavya Rao (Campus Director • usr_c30f4e91)</option>
+</select>
+</div>
+</div>
+<!-- Active JWT / Token Pill -->
+<div class="hidden sm:flex items-center gap-2 bg-surface-container-high px-3 py-2 rounded-xl">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-body-sm text-body-sm font-mono text-on-surface-variant" id="active-user-meta">role: "student" | scope: ["events:read", "rsvp:write"]</span>
+</div>
+</div>
+<!-- Dynamic Action Pill Container -->
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-highest text-on-surface transition-all" id="quick-ticket-btn" onclick="toggleTicketsModal()">
+<span class="material-symbols-outlined text-secondary text-[18px]">confirmation_number</span>
+<span class="font-label-md text-label-md">My Passes (<span id="my-passes-count">2</span>)</span>
+</button>
+<button class="hidden items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-secondary-container to-primary text-on-primary font-label-md text-label-md shadow-[0_0_20px_rgba(192,193,255,0.3)] hover:brightness-110 active:scale-95 transition-all" id="organizer-create-trigger" onclick="openCreateModal()">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+            Host New Event
+          </button>
+<button class="hidden items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-highest hover:bg-surface-bright text-tertiary font-label-md text-label-md transition-all" id="admin-analytics-trigger" onclick="scrollToAdminPanel()">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+            Campus Metrics
+          </button>
+<button class="p-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors" onclick="toggleSchemaModal()" title="Inspect PostgreSQL Schema &amp; API endpoints">
+<span class="material-symbols-outlined text-[20px]">schema</span>
+</button>
+</div>
+</div>
+<!-- Live Permissions Hint Bar -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-2" id="role-info-banner">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">security</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="role-description-text">
+            Alex has Student privileges: instant 1-click registration (<code class="text-tertiary font-mono">POST /api/registrations</code>), ticket sync via <code class="text-tertiary font-mono">GET /api/me/registrations</code>.
+          </span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-outline">HTTP 200 OK</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-outline">RLS ENFORCED</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Admin KPI Section (Dynamic View) -->
+<section class="hidden w-full px-gutter pb-space-lg transition-all" id="admin-panel">
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-tertiary/20 text-tertiary font-label-sm text-label-sm font-bold uppercase tracking-wider">Superuser Telemetry</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">cluster: us-east-pg16</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">Live Campus Event Velocity</h2>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-tertiary font-label-md text-label-md transition-colors" onclick="simulateTrafficBurst()">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+            Simulate 150 Registrations/sec
+          </button>
+</div>
+</div>
+<!-- Metric Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Active Registrations</span>
+<span class="material-symbols-outlined text-primary text-[20px]">people</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold" id="total-reg-counter">1,482</span>
+<span class="font-label-sm text-label-sm text-tertiary">+14.2% today</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full w-[78%]"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Overall Fill Rate</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">pie_chart</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold">88.4%</span>
+<span class="font-label-sm text-label-sm text-secondary">Optimal capacity</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full w-[88.4%]"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">API Success (201 Created)</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-tertiary font-extrabold" id="api-success-rate">96.8%</span>
+<span class="font-label-sm text-label-sm text-outline">3.2% 409 dupes</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary h-full w-[96.8%]"></div>
+</div>
+</div>
+<!-- Metric 4: Real-time sparkline SVG -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">409 Conflict Prevention</span>
+<span class="material-symbols-outlined text-primary text-[20px]">security_update_good</span>
+</div>
+<div class="py-1">
+<svg class="w-full h-9 text-primary overflow-visible" viewbox="0 0 160 36">
+<path d="M0,28 Q20,12 40,24 T80,10 T120,22 T160,6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="160" cy="6" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Zero DB lockouts</span>
+<span class="text-tertiary font-mono">0.00ms deadlock</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter, Search, and Category Ribbons -->
+<section class="w-full px-gutter pb-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<!-- Category Pills -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 text-on-surface">
+<button class="category-pill active-pill px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm" onclick="filterCategory('all', this)">All Fields</button>
+<button class="category-pill px-4 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-all" onclick="filterCategory('hackathon', this)">Hackathons</button>
+<button class="category-pill px-4 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-all" onclick="filterCategory('cultural', this)">Music &amp; Rave</button>
+<button class="category-pill px-4 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-all" onclick="filterCategory('tech', this)">Tech &amp; AI</button>
+<button class="category-pill px-4 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-all" onclick="filterCategory('career', this)">Career Sprints</button>
+</div>
+<!-- Quick Search and Status Filter -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-2 bg-surface-container px-3 py-2 rounded-xl">
+<span class="material-symbols-outlined text-outline text-[18px]">filter_list</span>
+<select class="bg-transparent text-body-sm font-body-sm text-on-surface focus:outline-none cursor-pointer" id="status-filter" onchange="filterStatus(this.value)">
+<option class="bg-surface-container text-on-surface" value="all">All Availability</option>
+<option class="bg-surface-container text-on-surface" value="open">Open Capacity</option>
+<option class="bg-surface-container text-on-surface" value="sold_out">Sold Out Only</option>
+<option class="bg-surface-container text-on-surface" value="live">Happening Today</option>
+</select>
+</div>
+<div class="flex items-center bg-surface-container px-3 py-2 rounded-xl w-48 sm:w-64">
+<span class="material-symbols-outlined text-outline text-[18px] mr-2">search</span>
+<input class="bg-transparent border-none text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none w-full" id="event-search-input" onkeyup="searchEvents(this.value)" placeholder="Find workshop, club..." type="text"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Live Events Grid (Direct Schema Presentation) -->
+<section class="w-full px-gutter pb-space-xl">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Active Campus Experiences</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary font-mono" id="results-count">5 Events Active</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline hidden sm:inline">Endpoint: <code class="text-tertiary font-mono">GET /api/events?limit=20</code></span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md" id="events-grid">
+<!-- Event Card 1: HackMIT 2025 -->
+<article class="event-card group rounded-2xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="hackathon" data-id="evt_01" data-organizer="usr_8b2e11d0" data-status="open">
+<div>
+<!-- Card Image Header -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant night-time university hackathon arena with glowing purple and cyan workstation monitors, excited college students collaborating with laptops, futuristic banners, and cinematic neon lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3i2NyYh0TcvT3fE8T9wv7sK-1eaexCRunWLo28kbp7oV0pChHIz7vldcJVWClxB0uIPRxu44hGDMWHA1kNV16rGr7x881gHPfv85aspbXpi0eogl00zjD4kobbL0Bb5uXaEdvbXrOo9gpTlh3PZE5WDDmR7RxdMzhr2UTx1_tCX3vWa1WUYLoInMZsABW4Vfo0y5Cc9t6BUBFsIL5wme8JksbJnAA24ZzKYmjpbg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-tertiary font-label-sm text-label-sm font-bold uppercase tracking-wider">Tech &amp; AI</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/90 backdrop-blur-md text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">local_fire_department</span> 42 Left
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface">
+<span class="font-label-sm text-label-sm bg-surface-container-highest/80 backdrop-blur-md px-2 py-0.5 rounded font-mono">OCT 24 • Kresge Hall</span>
+<span class="font-label-sm text-label-sm text-primary font-mono">FREE ENTRY</span>
+</div>
+</div>
+<!-- Title & Organizer Info -->
+<div class="flex items-start justify-between gap-2 mb-2">
+<h4 class="font-title-md text-title-md text-on-surface font-bold leading-tight group-hover:text-primary transition-colors">HackSphere 48h Collegiate Hackathon</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-md">Build generative apps, VR worlds, and decentralized protocols with $15,000 in bounties and sponsor mentorship.</p>
+<!-- Organizer Attribution -->
+<div class="flex items-center gap-2 mb-space-md p-2 rounded-xl bg-surface-container">
+<div class="w-7 h-7 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold text-xs font-mono">RV</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface truncate">Hosted by Rachel Vance (MIT CS Club)</span>
+<span class="font-label-sm text-label-sm text-outline font-mono truncate">uuid: 8b2e11d0-users-rachel</span>
+</div>
+</div>
+</div>
+<!-- Capacity Metric & Dynamic Action Buttons -->
+<div>
+<div class="flex items-center justify-between mb-1.5 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Capacity Status</span>
+<span class="text-on-surface font-semibold"><span class="event-reg-count">358</span> / <span class="event-capacity">400</span> registered</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 mb-space-md overflow-hidden">
+<div class="progress-bar bg-gradient-to-r from-primary to-secondary h-full transition-all duration-500" style="width: 89.5%;"></div>
+</div>
+<!-- Dynamic Action Container -->
+<div class="card-action-container flex items-center gap-2" data-capacity="400" data-event-id="evt_01" data-title="HackSphere 48h Collegiate Hackathon">
+<!-- Populated via Javascript depending on Role & State -->
+</div>
+</div>
+</article>
+<!-- Event Card 2: Spring Neon Rave & Sonic Arts -->
+<article class="event-card group rounded-2xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="cultural" data-id="evt_02" data-organizer="usr_e7b102" data-status="open">
+<div>
+<!-- Card Image Header -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Underground university electronic music show with deep ultraviolet and laser lights, silhouette of student DJ performing on illuminated synthesizer console, dancing crowd with glowsticks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQjKpFDlwkyy60znCi7Z8veU44_ATc33iy9WI7ki7T_vGyOBaFXY3-VyRfQgSyRLFkeBtMHZQLtL2OZ3JH5rz3bSmk8Yu8p0Z4JiiBao9SHGnJ7903yvZmLKS09JRyx1clkfFyNXWURpunWhm9H7MKfIkh2sSUJu4japnvTFfiB-Zo7oLl3wsoaYU7N2JHJzbopHg9lJWFETcgfUv7XNoRAvQXzWRekmik_cI4Bb4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">Music &amp; Rave</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high/90 backdrop-blur-md text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span> 98% Full
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface">
+<span class="font-label-sm text-label-sm bg-surface-container-highest/80 backdrop-blur-md px-2 py-0.5 rounded font-mono">TONIGHT 9PM • Student Union</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">STUDENT ID REQ</span>
+</div>
+</div>
+<!-- Title & Organizer Info -->
+<div class="flex items-start justify-between gap-2 mb-2">
+<h4 class="font-title-md text-title-md text-on-surface font-bold leading-tight group-hover:text-secondary transition-colors">Nocturnal Frequency: Synth &amp; Bass Night</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-md">Live ambient audiovisual performances from campus electronic production lab with reactive generative visuals.</p>
+<!-- Organizer Attribution -->
+<div class="flex items-center gap-2 mb-space-md p-2 rounded-xl bg-surface-container">
+<div class="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-xs font-mono">SO</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface truncate">Hosted by SoundLab Collective</span>
+<span class="font-label-sm text-label-sm text-outline font-mono truncate">uuid: e7b1029a-users-sound</span>
+</div>
+</div>
+</div>
+<!-- Capacity Metric & Dynamic Action Buttons -->
+<div>
+<div class="flex items-center justify-between mb-1.5 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Capacity Status</span>
+<span class="text-on-surface font-semibold"><span class="event-reg-count">492</span> / <span class="event-capacity">500</span> registered</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 mb-space-md overflow-hidden">
+<div class="progress-bar bg-gradient-to-r from-secondary to-tertiary h-full transition-all duration-500" style="width: 98.4%;"></div>
+</div>
+<!-- Dynamic Action Container -->
+<div class="card-action-container flex items-center gap-2" data-capacity="500" data-event-id="evt_02" data-title="Nocturnal Frequency: Synth &amp; Bass Night">
+<!-- Dynamic button -->
+</div>
+</div>
+</article>
+<!-- Event Card 3: Autonomous Robotics Showcase -->
+<article class="event-card group rounded-2xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="tech" data-id="evt_03" data-organizer="usr_8b2e11d0" data-status="open">
+<div>
+<!-- Card Image Header -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-tech university robotics research workshop with glowing carbon fiber quadruped robot dogs, robotic arms, drone prototypes, and engineering students in sleek laboratory environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7OHM_xhsqxTjYV-oPBokLiDp_KutRyi5MIqGo4IruEerlmN_k1ZktWkYFPb3-0DjpJL0sNsPUhuo3tBlPIwdipCNsnDYshsNnfY1usKpWHH0DdjFQOk-B81VoHTLGNuI3xxbdzNkAEnGvtsiJUCs4Z2QlTIQtNwNe3I2kmJicVmkkfsWqkj19dcyUMVNte7YsnHFsb9MAt9ozVHdqT9t8ykbinN0bJdz2hVIdzi4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-tertiary font-label-sm text-label-sm font-bold uppercase tracking-wider">Tech &amp; AI</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high/90 backdrop-blur-md text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+                Open RSVPs
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface">
+<span class="font-label-sm text-label-sm bg-surface-container-highest/80 backdrop-blur-md px-2 py-0.5 rounded font-mono">NOV 03 • Engineering Quad</span>
+<span class="font-label-sm text-label-sm text-tertiary font-mono">DEMO BOOTHS</span>
+</div>
+</div>
+<!-- Title & Organizer Info -->
+<div class="flex items-start justify-between gap-2 mb-2">
+<h4 class="font-title-md text-title-md text-on-surface font-bold leading-tight group-hover:text-primary transition-colors">Autonomous Robotics Showcase &amp; Battle</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-md">Watch competitive rover navigation trials, bipedal humanoid demonstrations, and interactive drone swarm races.</p>
+<!-- Organizer Attribution (Owned by Rachel Vance) -->
+<div class="flex items-center gap-2 mb-space-md p-2 rounded-xl bg-surface-container">
+<div class="w-7 h-7 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold text-xs font-mono">RV</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface truncate">Hosted by Rachel Vance (Organizer)</span>
+<span class="font-label-sm text-label-sm text-outline font-mono truncate">uuid: 8b2e11d0-users-rachel</span>
+</div>
+</div>
+</div>
+<!-- Capacity Metric & Dynamic Action Buttons -->
+<div>
+<div class="flex items-center justify-between mb-1.5 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Capacity Status</span>
+<span class="text-on-surface font-semibold"><span class="event-reg-count">115</span> / <span class="event-capacity">250</span> registered</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 mb-space-md overflow-hidden">
+<div class="progress-bar bg-gradient-to-r from-primary to-tertiary h-full transition-all duration-500" style="width: 46%;"></div>
+</div>
+<!-- Dynamic Action Container -->
+<div class="card-action-container flex items-center gap-2" data-capacity="250" data-event-id="evt_03" data-title="Autonomous Robotics Showcase">
+<!-- Dynamic button -->
+</div>
+</div>
+</article>
+<!-- Event Card 4: Venture Pitch & Founder Match -->
+<article class="event-card group rounded-2xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="career" data-id="evt_04" data-organizer="usr_fa3821" data-status="open">
+<div>
+<!-- Card Image Header -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern amphitheater university lecture hall with student startup teams presenting pitches on massive projection displays, venture capital judges listening intently in dramatic spotlighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcUKk7WtbQjJrUngIlzk-Tgidb61l6G448gEVkFKQdXUIb07sWOVE7QECvk0xxcuAW-7fPmXi80wkvUwZ9BKwhDNHpesQqnTAqHOy3eoTARHTGpWNmgsSNNNfET3cKxtJTsAMb-5VjpNKQayW6yvuDUUbBJoWkDGq5mr-pE1Jdmkq92S6cNsEEWnblMF9S_uxSrhaY115UHTm190P4M18yYYHiLA6jBk6IDR0yRos"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">Career Sprint</span>
+<span class="px-2.5 py-1 rounded-full bg-primary/20 backdrop-blur-md text-primary font-label-sm text-label-sm flex items-center gap-1">
+                Seed Grants Available
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface">
+<span class="font-label-sm text-label-sm bg-surface-container-highest/80 backdrop-blur-md px-2 py-0.5 rounded font-mono">NOV 12 • Innovation Hub</span>
+<span class="font-label-sm text-label-sm text-tertiary font-mono">50+ VCs ATTENDING</span>
+</div>
+</div>
+<!-- Title & Organizer Info -->
+<div class="flex items-start justify-between gap-2 mb-2">
+<h4 class="font-title-md text-title-md text-on-surface font-bold leading-tight group-hover:text-primary transition-colors">Campus Venture Sprint &amp; Co-Founder Speed Dating</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-md">Pitch your student-founded startup to active angel syndicates and discover cross-disciplinary technical co-founders.</p>
+<!-- Organizer Attribution -->
+<div class="flex items-center gap-2 mb-space-md p-2 rounded-xl bg-surface-container">
+<div class="w-7 h-7 rounded-full bg-tertiary/20 flex items-center justify-center text-tertiary font-bold text-xs font-mono">IV</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface truncate">Hosted by Campus E-Club</span>
+<span class="font-label-sm text-label-sm text-outline font-mono truncate">uuid: fa382109-users-entrep</span>
+</div>
+</div>
+</div>
+<!-- Capacity Metric & Dynamic Action Buttons -->
+<div>
+<div class="flex items-center justify-between mb-1.5 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Capacity Status</span>
+<span class="text-on-surface font-semibold"><span class="event-reg-count">88</span> / <span class="event-capacity">100</span> registered</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 mb-space-md overflow-hidden">
+<div class="progress-bar bg-gradient-to-r from-tertiary to-primary h-full transition-all duration-500" style="width: 88%;"></div>
+</div>
+<!-- Dynamic Action Container -->
+<div class="card-action-container flex items-center gap-2" data-capacity="100" data-event-id="evt_04" data-title="Campus Venture Sprint">
+<!-- Dynamic button -->
+</div>
+</div>
+</article>
+<!-- Event Card 5: Midnight Silent Disco Festival (Sold Out demo) -->
+<article class="event-card group rounded-2xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="cultural" data-id="evt_05" data-organizer="usr_8b2e11d0" data-status="sold_out">
+<div>
+<!-- Card Image Header -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Campus courtyard at midnight with hundreds of college students wearing glowing LED headphones emitting neon green and blue light, surrounded by historic ivy-covered buildings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD14DPijq4CEsTC69jIsh5PQMXitnnc_MIqlBsoiMnx1R0_n_MHzNycKD__BgYErtchvsWiSfLipx1eerMDkXNPbh0c9JHd1c8z0j_XvXzuA5LwsvKIsV6m4pu0dka9K7dnDhz1Qn4rCN1tLTvUuswjzHxFVYsQylUjj_JcUN0eKz3VFNO40aw-JyIKPihs-Sj-vcEtnJzz9MRBK96rrxzkf4LY6GfpBiFV-xXTa10"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">Music &amp; Arts</span>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-error font-label-sm text-label-sm flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[12px]">lock</span> SOLD OUT
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface">
+<span class="font-label-sm text-label-sm bg-surface-container-highest/80 backdrop-blur-md px-2 py-0.5 rounded font-mono">SATURDAY • Main Quad</span>
+<span class="font-label-sm text-label-sm text-error font-mono">CAPACITY REACHED</span>
+</div>
+</div>
+<!-- Title & Organizer Info -->
+<div class="flex items-start justify-between gap-2 mb-2">
+<h4 class="font-title-md text-title-md text-on-surface font-bold leading-tight group-hover:text-secondary transition-colors">3-Channel Midnight Silent Disco</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-md">Switch between House, Indie Rock, and Throwback channels under the starry sky on the central quad lawn.</p>
+<!-- Organizer Attribution -->
+<div class="flex items-center gap-2 mb-space-md p-2 rounded-xl bg-surface-container">
+<div class="w-7 h-7 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold text-xs font-mono">RV</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface truncate">Hosted by Rachel Vance (Organizer)</span>
+<span class="font-label-sm text-label-sm text-outline font-mono truncate">uuid: 8b2e11d0-users-rachel</span>
+</div>
+</div>
+</div>
+<!-- Capacity Metric & Dynamic Action Buttons -->
+<div>
+<div class="flex items-center justify-between mb-1.5 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Capacity Status</span>
+<span class="text-error font-semibold"><span class="event-reg-count">300</span> / <span class="event-capacity">300</span> (Full)</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 mb-space-md overflow-hidden">
+<div class="progress-bar bg-error h-full transition-all duration-500" style="width: 100%;"></div>
+</div>
+<!-- Dynamic Action Container -->
+<div class="card-action-container flex items-center gap-2" data-capacity="300" data-event-id="evt_05" data-title="3-Channel Midnight Silent Disco">
+<!-- Dynamic button -->
+</div>
+</div>
+</article>
+<!-- Organizer Quick Create In-Grid Card (Interactive Trigger) -->
+<div class="hidden rounded-2xl bg-surface-container-high/40 p-space-md flex-col justify-center items-center text-center shadow-lg group hover:bg-surface-container-high/70 transition-all cursor-pointer" id="organizer-quick-card" onclick="openCreateModal()">
+<div class="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-on-primary transition-all mb-3 shadow-[0_0_24px_rgba(192,193,255,0.2)]">
+<span class="material-symbols-outlined text-[32px]">add</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Launch a Campus Event</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-1 mb-4">You have organizer privileges. Publish directly to the catalog and manage QR scanner check-ins.</p>
+<span class="inline-flex items-center gap-1 text-primary font-label-md text-label-md font-semibold">
+          Open Creator Drawer
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</section>
+<!-- Live Toast / Notification feedback HUD -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none max-w-md w-full px-4" id="toast-hud">
+<div class="p-space-md rounded-2xl bg-surface-container-high backdrop-blur-2xl shadow-2xl flex items-start gap-3" id="toast-inner">
+<div class="w-8 h-8 rounded-xl bg-primary/20 flex items-center justify-center shrink-0" id="toast-icon-wrapper">
+<span class="material-symbols-outlined text-primary text-[20px]" id="toast-icon">check</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="font-label-md text-label-md text-on-surface font-bold" id="toast-title">Success</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate" id="toast-msg">Registration record created (201 Created)</div>
+<div class="font-label-sm text-label-sm text-outline font-mono mt-1" id="toast-endpoint">POST /api/registrations</div>
+</div>
+</div>
+</div>
+<!-- Attendee Inspection Drawer / Modal (GET /api/events/{id}/registrations) -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md hidden items-center justify-center p-4" id="attendees-modal">
+<div class="w-full max-w-2xl rounded-2xl bg-surface-container-low p-space-lg shadow-2xl relative max-h-[870px] flex flex-col">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary/20 text-secondary font-label-sm text-label-sm font-bold uppercase">Organizer View</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">GET /api/events/{id}/registrations</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1" id="attendees-modal-title">Attendee Registry</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="closeAttendeesModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex items-center justify-between py-2 px-3 rounded-xl bg-surface-container mb-space-md">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Confirmed RSVP Attendees:</span>
+<span class="font-mono text-primary font-bold" id="attendee-modal-count">358 Checked / Confirmed</span>
+</div>
+<!-- Scrollable list of registered users -->
+<div class="flex-1 overflow-y-auto space-y-2 pr-1" id="attendees-list-container">
+<!-- Mock rows injected via JS -->
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md" onclick="exportCSV()">
+<span class="material-symbols-outlined text-[16px]">download</span>
+          Export Roster (.csv)
+        </button>
+<button class="px-4 py-2 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md" onclick="closeAttendeesModal()">
+          Done
+        </button>
+</div>
+</div>
+</div>
+<!-- Create Event Modal (Organizer) -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md hidden items-center justify-center p-4" id="create-modal">
+<div class="w-full max-w-lg rounded-2xl bg-surface-container-low p-space-lg shadow-2xl relative">
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<div>
+<span class="px-2 py-0.5 rounded-full bg-primary/20 text-primary font-label-sm text-label-sm font-bold uppercase">Schema: events</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Host a Campus Experience</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="closeCreateModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<form class="space-y-space-md" id="create-event-form" onsubmit="handleCreateEvent(event)">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5">Event Title (events.title)</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary font-body-md text-body-md" id="new-evt-title" placeholder="e.g. AI Prompt Engineering Jam" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5">Capacity (events.capacity : int4)</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary font-body-md text-body-md font-mono" id="new-evt-capacity" max="1000" min="5" required="" type="number" value="150"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5">Category</label>
+<select class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container text-on-surface focus:outline-none focus:ring-1 focus:ring-primary font-body-md text-body-md" id="new-evt-category">
+<option value="hackathon">Hackathon</option>
+<option value="tech">Tech &amp; AI</option>
+<option value="cultural">Music &amp; Cultural</option>
+<option value="career">Career &amp; Pitch</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5">Venue &amp; Date</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary font-body-md text-body-md" id="new-evt-venue" placeholder="e.g. Nov 28 • Student Pavilion Hall C" required="" type="text"/>
+</div>
+<div class="p-3 rounded-xl bg-surface-container text-on-surface-variant font-body-sm text-body-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">key</span>
+<span>Assigns <code class="font-mono text-secondary">organizer_id = 8b2e11d0</code> automatically.</span>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="px-4 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md" onclick="closeCreateModal()" type="button">
+            Cancel
+          </button>
+<button class="px-5 py-2 rounded-xl bg-gradient-to-r from-secondary-container to-primary text-on-primary font-label-md text-label-md shadow-[0_0_16px_rgba(192,193,255,0.4)] hover:brightness-110 active:scale-95 transition-all" type="submit">
+            Publish Event (POST /api/events)
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- My Passes Modal (GET /api/me/registrations) -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md hidden items-center justify-center p-4" id="tickets-modal">
+<div class="w-full max-w-lg rounded-2xl bg-surface-container-low p-space-lg shadow-2xl relative max-h-[870px] flex flex-col">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary/20 text-primary font-label-sm text-label-sm font-bold uppercase">Pass Wallet</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">GET /api/me/registrations</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">My Registered Events</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="toggleTicketsModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto space-y-space-sm pr-1" id="my-passes-list">
+<!-- Rendered dynamically -->
+</div>
+</div>
+</div>
+<!-- Postgres Schema & Endpoint Inspector Drawer Modal -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md hidden items-center justify-center p-4" id="schema-modal">
+<div class="w-full max-w-3xl rounded-2xl bg-surface-container-low p-space-lg shadow-2xl relative max-h-[921px] flex flex-col overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-tertiary/20 text-tertiary font-label-sm text-label-sm font-bold uppercase font-mono">PostgreSQL DDL &amp; REST Spec</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Database Schema &amp; Access Rules</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="toggleSchemaModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto space-y-space-md pr-1">
+<!-- Schema Relational Diagram Block -->
+<div class="p-space-md rounded-xl bg-surface-container">
+<div class="font-label-md text-label-md text-primary font-bold mb-2">Relational Entity Flow</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm font-mono text-body-sm text-body-sm">
+<div class="p-3 rounded-lg bg-surface-container-high">
+<div class="text-tertiary font-bold mb-1">users</div>
+<div class="text-outline">id: uuid (PK)</div>
+<div class="text-outline">email: text</div>
+<div class="text-outline">role: 'student'|'organizer'|'admin'</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-high">
+<div class="text-secondary font-bold mb-1">events</div>
+<div class="text-outline">id: uuid (PK)</div>
+<div class="text-secondary font-semibold">organizer_id -&gt; users.id</div>
+<div class="text-outline">title: text</div>
+<div class="text-outline">capacity: int4</div>
+<div class="text-outline">status: text</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-high">
+<div class="text-primary font-bold mb-1">registrations</div>
+<div class="text-outline">id: uuid (PK)</div>
+<div class="text-tertiary">user_id -&gt; users.id</div>
+<div class="text-secondary">event_id -&gt; events.id</div>
+<div class="text-outline">created_at: timestamptz</div>
+</div>
+</div>
+</div>
+<!-- Endpoints Spec Table -->
+<div class="p-space-md rounded-xl bg-surface-container">
+<div class="font-label-md text-label-md text-on-surface font-bold mb-space-sm">Implemented API Endpoints</div>
+<div class="space-y-2 font-mono text-body-sm text-body-sm">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-bold text-xs">GET</span>
+<span class="text-on-surface">/api/events</span>
+</div>
+<span class="text-on-surface-variant">Public • Browse and search</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-bold text-xs">POST</span>
+<span class="text-on-surface">/api/registrations</span>
+</div>
+<span class="text-tertiary">201 Created or 409 Conflict (Duplicate RSVP)</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-bold text-xs">GET</span>
+<span class="text-on-surface">/api/me/registrations</span>
+</div>
+<span class="text-on-surface-variant">Authenticated student passes</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold text-xs">GET</span>
+<span class="text-on-surface">/api/events/{id}/registrations</span>
+</div>
+<span class="text-secondary">Owner Organizer or Admin Only</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex justify-end">
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md" onclick="toggleSchemaModal()">Close Schema Viewer</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simulated State Store directly mirroring the SQL schema
+  const APP_STATE = {
+    currentUser: {
+      id: '4a8f9c21-users-alex',
+      name: 'Alex River',
+      role: 'student', // 'student' | 'organizer' | 'admin'
+      email: 'alex.river@campus.edu'
+    },
+    // User registrations: set of event IDs this user is registered for
+    myRegistrations: new Set(['evt_01']),
+    
+    // Pre-seeded events matching Schema
+    events: [
+      { id: 'evt_01', organizer_id: '8b2e11d0-users-rachel', title: 'HackSphere 48h Collegiate Hackathon', capacity: 400, registered_count: 358, status: 'open' },
+      { id: 'evt_02', organizer_id: 'e7b1029a-users-sound', title: 'Nocturnal Frequency: Synth & Bass Night', capacity: 500, registered_count: 492, status: 'open' },
+      { id: 'evt_03', organizer_id: '8b2e11d0-users-rachel', title: 'Autonomous Robotics Showcase', capacity: 250, registered_count: 115, status: 'open' },
+      { id: 'evt_04', organizer_id: 'fa382109-users-entrep', title: 'Campus Venture Sprint & Pitch', capacity: 100, registered_count: 88, status: 'open' },
+      { id: 'evt_05', organizer_id: '8b2e11d0-users-rachel', title: '3-Channel Midnight Silent Disco', capacity: 300, registered_count: 300, status: 'sold_out' }
+    ]
+  };
+
+  // Mock list of attendees for organizer review
+  const MOCK_ATTENDEES = [
+    { name: 'Alex River', id: '4a8f9c21', email: 'alex.river@campus.edu', time: '14 mins ago' },
+    { name: 'Liam Chen', id: '9f228b1a', email: 'liam.chen@campus.edu', time: '42 mins ago' },
+    { name: 'Zara Patel', id: '3b1109dc', email: 'zara.patel@campus.edu', time: '1 hr ago' },
+    { name: 'Marcus Brody', id: '8a77321e', email: 'm.brody@campus.edu', time: '3 hrs ago' },
+    { name: 'Elena Rostova', id: '5c44199f', email: 'elena.rostova@campus.edu', time: '5 hrs ago' },
+    { name: 'Devon Miles', id: '11e092bc', email: 'dmiles@campus.edu', time: 'Yesterday' }
+  ];
+
+  // Initialize UI & Event listeners
+  document.addEventListener('DOMContentLoaded', () => {
+    initRoleSwitcher();
+    renderAllCardActions();
+    updatePassesBadge();
+  });
+
+  // Persona Role Switcher
+  function initRoleSwitcher() {
+    const roleSelect = document.getElementById('user-role-select');
+    roleSelect.addEventListener('change', (e) => {
+      const selectedRole = e.target.value;
+      if (selectedRole === 'student') {
+        APP_STATE.currentUser = {
+          id: '4a8f9c21-users-alex',
+          name: 'Alex River',
+          role: 'student',
+          email: 'alex.river@campus.edu'
+        };
+      } else if (selectedRole === 'organizer') {
+        APP_STATE.currentUser = {
+          id: '8b2e11d0-users-rachel',
+          name: 'Rachel Vance',
+          role: 'organizer',
+          email: 'rachel.vance@campus.edu'
+        };
+      } else if (selectedRole === 'admin') {
+        APP_STATE.currentUser = {
+          id: 'c30f4e91-users-kavya',
+          name: 'Dr. Kavya Rao',
+          role: 'admin',
+          email: 'admin.director@campus.edu'
+        };
+      }
+      syncRoleUI();
+    });
+
+    syncRoleUI();
+  }
+
+  function syncRoleUI() {
+    const role = APP_STATE.currentUser.role;
+    const metaTag = document.getElementById('active-user-meta');
+    const desc = document.getElementById('role-description-text');
+    const orgTrigger = document.getElementById('organizer-create-trigger');
+    const adminTrigger = document.getElementById('admin-analytics-trigger');
+    const adminPanel = document.getElementById('admin-panel');
+    const orgQuickCard = document.getElementById('organizer-quick-card');
+
+    if (role === 'student') {
+      metaTag.innerText = 'role: "student" | scope: ["events:read", "rsvp:write"]';
+      desc.innerHTML = 'Alex has <strong>Student privileges</strong>: Instant 1-click registration (<code class="text-tertiary font-mono">POST /api/registrations</code>) and pass wallet (<code class="text-tertiary font-mono">GET /api/me/registrations</code>).';
+      orgTrigger.classList.add('hidden');
+      adminTrigger.classList.add('hidden');
+      adminPanel.classList.add('hidden');
+      orgQuickCard.classList.add('hidden');
+      orgQuickCard.classList.remove('flex');
+    } else if (role === 'organizer') {
+      metaTag.innerText = 'role: "organizer" | scope: ["events:write", "attendees:read", "rsvp:write"]';
+      desc.innerHTML = 'Rachel has <strong>Organizer privileges</strong>: Create events, view attendee lists for hosted events (<code class="text-secondary font-mono">GET /api/events/{id}/registrations</code>), and RSVP as an attendee.';
+      orgTrigger.classList.remove('hidden');
+      orgTrigger.classList.add('flex');
+      adminTrigger.classList.add('hidden');
+      adminPanel.classList.add('hidden');
+      orgQuickCard.classList.remove('hidden');
+      orgQuickCard.classList.add('flex');
+    } else if (role === 'admin') {
+      metaTag.innerText = 'role: "admin" | scope: ["*"] | RLS Bypass Telemetry';
+      desc.innerHTML = 'Dr. Rao has <strong>Admin privileges</strong>: Full access to audit logs, real-time registration throughput, capacity fill-rate metrics, and moderation controls.';
+      orgTrigger.classList.add('hidden');
+      adminTrigger.classList.remove('hidden');
+      adminTrigger.classList.add('flex');
+      adminPanel.classList.remove('hidden');
+      orgQuickCard.classList.add('hidden');
+      orgQuickCard.classList.remove('flex');
+    }
+
+    renderAllCardActions();
+    showToast(`Switched persona to: ${APP_STATE.currentUser.name} (${APP_STATE.currentUser.role.toUpperCase()})`, 'badge', 'Auth context updated');
+  }
+
+  // Render Action buttons for every event card dynamically based on role & registration state
+  function renderAllCardActions() {
+    const containers = document.querySelectorAll('.card-action-container');
+    const role = APP_STATE.currentUser.role;
+    const currentUserId = APP_STATE.currentUser.id;
+
+    containers.forEach(container => {
+      const eventId = container.getAttribute('data-event-id');
+      const eventTitle = container.getAttribute('data-title');
+      const isRegistered = APP_STATE.myRegistrations.has(eventId);
+      
+      const evtData = APP_STATE.events.find(e => e.id === eventId);
+      const isOwner = evtData && (evtData.organizer_id === currentUserId || (currentUserId.includes('rachel') && evtData.organizer_id.includes('rachel')));
+      const isSoldOut = evtData && evtData.status === 'sold_out';
+
+      container.innerHTML = ''; // clear
+
+      if (role === 'admin') {
+        container.innerHTML = `
+          <button onclick="viewAttendees('${eventId}', '${eventTitle}')" class="flex-1 py-2 px-3 rounded-xl bg-surface-container-highest hover:bg-surface-bright text-tertiary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all">
+            <span class="material-symbols-outlined text-[16px]">visibility</span>
+            Audit Registrations
+          </button>
+          <button onclick="toggleModerate('${eventId}')" class="py-2 px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-error font-label-md text-label-md transition-all" title="Moderate event">
+            <span class="material-symbols-outlined text-[16px]">shield</span>
+          </button>
+        `;
+      } else if (role === 'organizer' && isOwner) {
+        container.innerHTML = `
+          <button onclick="viewAttendees('${eventId}', '${eventTitle}')" class="flex-1 py-2.5 px-3 rounded-xl bg-surface-container-highest hover:bg-surface-bright text-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all">
+            <span class="material-symbols-outlined text-[16px]">groups</span>
+            Manage Attendees (${evtData ? evtData.registered_count : 0})
+          </button>
+          <button onclick="toggleEventCapacityModal('${eventId}')" class="py-2 px-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" title="Edit Capacity">
+            <span class="material-symbols-outlined text-[16px]">tune</span>
+          </button>
+        `;
+      } else {
+        // Student role, or Organizer interacting with an event they don't host
+        if (isSoldOut && !isRegistered) {
+          container.innerHTML = `
+            <button disabled class="w-full py-2.5 px-4 rounded-xl bg-surface-container text-outline font-label-md text-label-md flex items-center justify-center gap-1.5 cursor-not-allowed">
+              <span class="material-symbols-outlined text-[16px]">block</span>
+              At Maximum Capacity (Waitlist Closed)
+            </button>
+          `;
+        } else if (isRegistered) {
+          container.innerHTML = `
+            <button onclick="handleDeregister('${eventId}', '${eventTitle}')" class="flex-1 py-2.5 px-4 rounded-xl bg-surface-container-high text-tertiary font-label-md text-label-md flex items-center justify-center gap-2 group hover:bg-error-container hover:text-on-error-container transition-all">
+              <span class="material-symbols-outlined text-[16px] group-hover:hidden">verified</span>
+              <span class="material-symbols-outlined text-[16px] hidden group-hover:inline">cancel</span>
+              <span class="group-hover:hidden">Pass Confirmed</span>
+              <span class="hidden group-hover:inline">Cancel RSVP (DELETE)</span>
+            </button>
+            <button onclick="viewQrTicket('${eventId}')" class="p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface" title="Show QR Ticket">
+              <span class="material-symbols-outlined text-[18px]">qr_code_2</span>
+            </button>
+          `;
+        } else {
+          container.innerHTML = `
+            <button onclick="handleRegister('${eventId}', '${eventTitle}')" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-primary to-secondary-container hover:brightness-110 active:scale-95 text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-[0_0_16px_rgba(192,193,255,0.25)] transition-all">
+              <span class="material-symbols-outlined text-[16px]">flash_on</span>
+              1-Click Register (POST /api/registrations)
+            </button>
+          `;
+        }
+      }
+    });
+  }
+
+  // POST /api/registrations Simulation
+  function handleRegister(eventId, eventTitle) {
+    if (APP_STATE.myRegistrations.has(eventId)) {
+      // 409 Conflict simulation
+      showToast(`Conflict 409: Duplicate RSVP detected for user ${APP_STATE.currentUser.id}`, 'warning', 'POST /api/registrations => HTTP 409 CONFLICT');
+      return;
+    }
+
+    const evt = APP_STATE.events.find(e => e.id === eventId);
+    if (evt && evt.registered_count >= evt.capacity) {
+      showToast('Event has just reached capacity! (422 Unprocessable)', 'error', 'POST /api/registrations => HTTP 422');
+      return;
+    }
+
+    // Success: 201 Created
+    APP_STATE.myRegistrations.add(eventId);
+    if (evt) {
+      evt.registered_count += 1;
+      updateEventCardCount(eventId, evt.registered_count, evt.capacity);
+    }
+    
+    updatePassesBadge();
+    renderAllCardActions();
+    
+    showToast(`RSVP Confirmed for "${eventTitle}"!`, 'check_circle', 'POST /api/registrations => HTTP 201 CREATED');
+
+    // Update Admin KPI if open
+    const counter = document.getElementById('total-reg-counter');
+    if (counter) {
+      counter.innerText = (parseInt(counter.innerText.replace(',', '')) + 1).toLocaleString();
+    }
+  }
+
+  function handleDeregister(eventId, eventTitle) {
+    APP_STATE.myRegistrations.delete(eventId);
+    const evt = APP_STATE.events.find(e => e.id === eventId);
+    if (evt && evt.registered_count > 0) {
+      evt.registered_count -= 1;
+      updateEventCardCount(eventId, evt.registered_count, evt.capacity);
+    }
+    updatePassesBadge();
+    renderAllCardActions();
+    showToast(`Cancelled registration for "${eventTitle}"`, 'info', 'DELETE /api/registrations => HTTP 200 OK');
+  }
+
+  function updateEventCardCount(eventId, count, capacity) {
+    const card = document.querySelector(`article[data-id="${eventId}"]`);
+    if (card) {
+      const countEl = card.querySelector('.event-reg-count');
+      const bar = card.querySelector('.progress-bar');
+      if (countEl) countEl.innerText = count;
+      if (bar) {
+        const pct = Math.min(100, (count / capacity) * 100);
+        bar.style.width = pct + '%';
+      }
+    }
+  }
+
+  function updatePassesBadge() {
+    const badge = document.getElementById('my-passes-count');
+    if (badge) badge.innerText = APP_STATE.myRegistrations.size;
+  }
+
+  // Attendees Modal (GET /api/events/{id}/registrations)
+  function viewAttendees(eventId, eventTitle) {
+    const modal = document.getElementById('attendees-modal');
+    const title = document.getElementById('attendees-modal-title');
+    const list = document.getElementById('attendees-list-container');
+    const count = document.getElementById('attendee-modal-count');
+
+    title.innerText = eventTitle;
+    list.innerHTML = '';
+
+    const evt = APP_STATE.events.find(e => e.id === eventId);
+    count.innerText = `${evt ? evt.registered_count : 358} Registered Students`;
+
+    MOCK_ATTENDEES.forEach(att => {
+      const row = document.createElement('div');
+      row.className = 'flex items-center justify-between p-3 rounded-xl bg-surface-container';
+      row.innerHTML = `
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-xs font-mono">
+            ${att.name.split(' ').map(n=>n[0]).join('')}
+          </div>
+          <div>
+            <div class="font-label-md text-label-md text-on-surface font-semibold">${att.name}</div>
+            <div class="font-body-sm text-body-sm text-outline font-mono">${att.email} • ID: ${att.id}</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="font-label-sm text-label-sm text-tertiary font-mono">${att.time}</span>
+          <span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">QR Valid</span>
+        </div>
+      `;
+      list.appendChild(row);
+    });
+
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    showToast(`Loaded roster for event ${eventId}`, 'group', 'GET /api/events/' + eventId + '/registrations => 200');
+  }
+
+  function closeAttendeesModal() {
+    const modal = document.getElementById('attendees-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  // Create Event Form Handler
+  function openCreateModal() {
+    const modal = document.getElementById('create-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeCreateModal() {
+    const modal = document.getElementById('create-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  function handleCreateEvent(e) {
+    e.preventDefault();
+    const title = document.getElementById('new-evt-title').value;
+    const capacity = parseInt(document.getElementById('new-evt-capacity').value);
+    const category = document.getElementById('new-evt-category').value;
+    const venue = document.getElementById('new-evt-venue').value;
+
+    const newId = 'evt_' + (APP_STATE.events.length + 1).toString().padStart(2, '0');
+    
+    const newEvent = {
+      id: newId,
+      organizer_id: APP_STATE.currentUser.id,
+      title: title,
+      capacity: capacity,
+      registered_count: 1,
+      status: 'open'
+    };
+
+    APP_STATE.events.unshift(newEvent);
+
+    // Create and inject new Card in DOM
+    const grid = document.getElementById('events-grid');
+    const newArticle = document.createElement('article');
+    newArticle.setAttribute('data-id', newId);
+    newArticle.setAttribute('data-category', category);
+    newArticle.setAttribute('data-status', 'open');
+    newArticle.setAttribute('data-organizer', APP_STATE.currentUser.id);
+    newArticle.className = 'event-card group rounded-2xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-xl transition-all duration-300 hover:-translate-y-1 animate-pulse';
+
+    newArticle.innerHTML = `
+      <div>
+        <div class="relative w-full h-44 rounded-xl overflow-hidden mb-space-md">
+          <img src="placeholder" data-alt="Cutting-edge university event presentation hall with holographic displays and energetic student audience." class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+          <div class="absolute top-3 left-3 flex items-center gap-2">
+            <span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-tertiary font-label-sm text-label-sm font-bold uppercase">${category.toUpperCase()}</span>
+            <span class="px-2.5 py-1 rounded-full bg-primary/20 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold">JUST POSTED</span>
+          </div>
+          <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface">
+            <span class="font-label-sm text-label-sm bg-surface-container-highest/80 backdrop-blur-md px-2 py-0.5 rounded font-mono">${venue}</span>
+          </div>
+        </div>
+        <div class="flex items-start justify-between gap-2 mb-2">
+          <h4 class="font-title-md text-title-md text-on-surface font-bold leading-tight">${title}</h4>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-md">Newly published student gathering created via Organizer Hub API.</p>
+        <div class="flex items-center gap-2 mb-space-md p-2 rounded-xl bg-surface-container">
+          <div class="w-7 h-7 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold text-xs font-mono">RV</div>
+          <div class="flex flex-col min-w-0">
+            <span class="font-label-sm text-label-sm text-on-surface truncate">Hosted by ${APP_STATE.currentUser.name}</span>
+            <span class="font-label-sm text-label-sm text-outline font-mono truncate">uuid: ${APP_STATE.currentUser.id}</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center justify-between mb-1.5 font-label-sm text-label-sm">
+          <span class="text-on-surface-variant">Capacity Status</span>
+          <span class="text-on-surface font-semibold"><span class="event-reg-count">1</span> / <span class="event-capacity">${capacity}</span> registered</span>
+        </div>
+        <div class="w-full bg-surface-container-highest rounded-full h-2 mb-space-md overflow-hidden">
+          <div class="progress-bar bg-gradient-to-r from-primary to-secondary h-full transition-all duration-500" style="width: 1%;"></div>
+        </div>
+        <div class="card-action-container flex items-center gap-2" data-event-id="${newId}" data-title="${title}" data-capacity="${capacity}"></div>
+      </div>
+    `;
+
+    grid.insertBefore(newArticle, grid.firstChild);
+    setTimeout(() => newArticle.classList.remove('animate-pulse'), 1200);
+
+    closeCreateModal();
+    renderAllCardActions();
+    document.getElementById('create-event-form').reset();
+    showToast(`Published "${title}" to Campus Database!`, 'add_task', 'POST /api/events => 201 CREATED');
+  }
+
+  // Tickets Wallet Modal
+  function toggleTicketsModal() {
+    const modal = document.getElementById('tickets-modal');
+    const list = document.getElementById('my-passes-list');
+    
+    if (modal.classList.contains('hidden')) {
+      list.innerHTML = '';
+      if (APP_STATE.myRegistrations.size === 0) {
+        list.innerHTML = `
+          <div class="p-8 text-center text-on-surface-variant">
+            <span class="material-symbols-outlined text-[48px] text-outline mb-2">confirmation_number</span>
+            <p class="font-body-md text-body-md">No active passes found for usr_4a8f9c21.</p>
+            <p class="font-body-sm text-body-sm text-outline mt-1">Explore campus events and RSVP with 1 click.</p>
+          </div>
+        `;
+      } else {
+        APP_STATE.myRegistrations.forEach(evtId => {
+          const evt = APP_STATE.events.find(e => e.id === evtId);
+          const title = evt ? evt.title : 'Campus Experience';
+          const passCard = document.createElement('div');
+          passCard.className = 'p-space-md rounded-xl bg-surface-container flex items-center justify-between';
+          passCard.innerHTML = `
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-tertiary/20 flex items-center justify-center text-tertiary">
+                <span class="material-symbols-outlined text-[22px]">qr_code</span>
+              </div>
+              <div>
+                <h5 class="font-label-md text-label-md text-on-surface font-semibold">${title}</h5>
+                <span class="font-label-sm text-label-sm text-outline font-mono">REG-ID: ${evtId}-usr_${Math.floor(Math.random()*8999+1000)}</span>
+              </div>
+            </div>
+            <button onclick="handleDeregister('${evtId}', '${title}'); toggleTicketsModal();" class="p-2 rounded-lg bg-surface-container-high hover:bg-error-container hover:text-error text-on-surface-variant transition-colors" title="Cancel Reservation">
+              <span class="material-symbols-outlined text-[18px]">delete</span>
+            </button>
+          `;
+          list.appendChild(passCard);
+        });
+      }
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function toggleSchemaModal() {
+    const modal = document.getElementById('schema-modal');
+    if (modal.classList.contains('hidden')) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function scrollToAdminPanel() {
+    const el = document.getElementById('admin-panel');
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Toast Notification HUD
+  let toastTimer = null;
+  function showToast(message, iconName = 'check', endpoint = 'POST /api/registrations') {
+    const hud = document.getElementById('toast-hud');
+    const msgEl = document.getElementById('toast-msg');
+    const iconEl = document.getElementById('toast-icon');
+    const endEl = document.getElementById('toast-endpoint');
+
+    if (msgEl) msgEl.innerText = message;
+    if (iconEl) iconEl.innerText = iconName;
+    if (endEl) endEl.innerText = endpoint;
+
+    hud.classList.remove('translate-y-32', 'opacity-0');
+    hud.classList.add('translate-y-0', 'opacity-100');
+
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      hud.classList.add('translate-y-32', 'opacity-0');
+      hud.classList.remove('translate-y-0', 'opacity-100');
+    }, 3800);
+  }
+
+  // Filters & Search
+  function filterCategory(cat, btn) {
+    document.querySelectorAll('.category-pill').forEach(b => {
+      b.classList.remove('bg-primary', 'text-on-primary', 'active-pill');
+      b.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+    btn.classList.add('bg-primary', 'text-on-primary', 'active-pill');
+    btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+    const cards = document.querySelectorAll('.event-card');
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const cCat = card.getAttribute('data-category');
+      if (cat === 'all' || cCat === cat) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+    document.getElementById('results-count').innerText = `${visibleCount} Events Active`;
+  }
+
+  function filterStatus(status) {
+    const cards = document.querySelectorAll('.event-card');
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const cStatus = card.getAttribute('data-status');
+      if (status === 'all' || cStatus === status) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+    document.getElementById('results-count').innerText = `${visibleCount} Events Active`;
+  }
+
+  function searchEvents(query) {
+    const q = query.toLowerCase().trim();
+    const cards = document.querySelectorAll('.event-card');
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const text = card.innerText.toLowerCase();
+      if (!q || text.includes(q)) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+    document.getElementById('results-count').innerText = `${visibleCount} Events Active`;
+  }
+
+  function simulateTrafficBurst() {
+    const counter = document.getElementById('total-reg-counter');
+    const rate = document.getElementById('api-success-rate');
+    showToast('Executing stress test: 150 parallel RSVP bursts generated...', 'bolt', 'BENCHMARK: 150 POST/s concurrent');
+    let current = parseInt(counter.innerText.replace(',', ''));
+    let added = 0;
+    const interval = setInterval(() => {
+      current += 6;
+      added += 6;
+      counter.innerText = current.toLocaleString();
+      if (added >= 150) {
+        clearInterval(interval);
+        rate.innerText = '98.1%';
+        showToast('Traffic burst settled. Postgres connection pool: 0 errors (0 lockouts).', 'speed', 'RLS Test PASSED');
+      }
+    }, 50);
+  }
+
+  function viewQrTicket(id) {
+    showToast('Encrypted Pass QR Code generated with dynamic totp key.', 'qr_code', 'GET /api/me/registrations/' + id + '/ticket');
+  }
+
+  function toggleModerate(id) {
+    showToast(`Admin flagged event ${id} for campus compliance review`, 'flag', 'PATCH /api/admin/events/' + id);
+  }
+
+  function exportCSV() {
+    showToast('Attendee roster exported to CSV.', 'file_download', 'GET /api/events/{id}/registrations?format=csv');
+  }
+</script></main><footer class="w-full bg-surface-container-lowest mt-space-xl"><div class="w-full px-gutter py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-primary/20 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[16px]">hub</span></div><span class="font-headline-sm text-headline-sm text-on-surface font-bold">UniSphere</span><span class="font-body-sm text-body-sm text-outline ml-2">Decentralized Campus Events Infrastructure</span></div><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">API Docs</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Supabase Status</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Campus Guidelines</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Support</a></div><div class="font-body-sm text-body-sm text-outline">© 2025 UniSphere Events. Built for campus life.</div></div></footer></body></html>
